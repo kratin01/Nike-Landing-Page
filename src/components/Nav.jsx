@@ -53,12 +53,11 @@ const Nav = () => {
             </li>
           ))}
         </ul>
-        <div className="flex gap-2 text-lg leading-normal font-medium font-montserrat max-lg:hidden wide:mr-24">
+        <div className="flex gap-2  text-lg leading-normal font-medium font-montserrat max-lg:hidden wide:mr-24">
           <a href="/">Sign in</a>
           <span>/</span>
           <a href="/">Explore now</a>
-        </div>
-        <div className=" flex justify-end items-center max-w-1 space-x-4 max-lg:hidden">
+          <div className=" flex     max-w-1 space-x-4 max-lg:hidden">
           <button
             onClick={handlethemeswitcher}
             className=" text-black p-2 rounded-xl text-lg "
@@ -66,6 +65,8 @@ const Nav = () => {
             {theme === "light" ? <FaMoon /> : <FaSun />}
           </button>
         </div>
+        </div>
+       
 
         <div className="hidden max-lg:block">
           <img src={hamburger} alt="hamburger icon" width={25} height={25} />
